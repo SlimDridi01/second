@@ -1,0 +1,35 @@
+ALGORITHM hashtablepresentelement
+VAR
+    setone : ARRAY_OF INTEGER[5];
+    setone : ARRAY_OF INTEGER[5];
+    htab : HASH_TABLE<STRING,INTEGER>.
+    i,j,sum : INTEGER;
+BEGIN
+    FOR i FROM 0 TO 4 STEP 1 DO
+        Read (setone[i]);
+    END_FOR
+
+    FOR J FROM 0 TO 4 STEP 1 DO
+        Read (setone[j]);
+    END_FOR
+
+ FOR i FROM 0 TO 4 STEP 1  DO
+     htab.insert(se1[i],1);
+ END_FOR
+FOR j FROM 0 TO 4 STEP 1  DO
+IF (htab.lookup(settwo[j]=true)) THEN
+    htab.insert(settwo[j],2);
+    ELSE 
+    htab.insert(settwo[j],1);
+END_IF
+END_FOR
+
+FOR i FROM 0 TO 4 STEP 1 DO
+IF (htab.get(setone[i]=1)) THEN
+    sum := sum + setone[i]*2;
+END_IF
+END_FOR
+
+
+ write ("sommme:",sum);
+END
